@@ -81,21 +81,8 @@ initContainers: {}
 ##   BAR: HELLO-WORLD!
 env: 
   HOME: "/tmp/myapp"
-  # REACT_APP_WIZARD_VICUNA_7B: "https://wizardvicuna-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/chat/completions"
-  # REACT_APP_WIZARD_VICUNA_13B: "https://gpuwizardvicuna13b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/chat/completions"
-  # REACT_APP_WIZARD_VICUNA_30B: "https://wizardvicuna30b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/chat/completions"
-  # REACT_APP_WIZARD_VICUNA_7B_ONE: "WIZARD VICUNA 7B"
-  # REACT_APP_WIZARD_VICUNA_13B_TWO: "WIZARD VICUNA 13B"
-  # REACT_APP_WIZARD_VICUNA_30B_THREE: "WIZARD VICUNA 30B"
-  REACT_APP_MODEL_7B: "WIZARD VICUNA 7B"
-  REACT_APP_MODEL_13B: "WIZARD VICUNA 13B"
-  REACT_APP_MODEL_30B: "ROBIN 33B"
-  REACT_APP_MODEL_FRENCH: "VIGOGNE 13B"
-  REACT_APP_MODEL_7B_URL: "http://wv7b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/completions"
-  REACT_APP_MODEL_13B_URL: "https://wv13b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/completions"
-  REACT_APP_MODEL_30B_URL: "https://robin33b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io"
-  REACT_APP_MODEL_FRENCH_URL: "https://vigogne13b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io/v1/completions"
-  REACT_APP_BACKEND_URL: "https://expaibackend-satyamkumar-209565-0.datalab.euw1.prod.sgcip.io/"
+  # REACT_APP_WIZARD_VICUNA_7B: "url"
+  
 
 ## @param envFrom Configures of envFrom to include into the main container
 ##
@@ -238,8 +225,7 @@ image:
   # repository: "ciprnd/wv13bgpu"
   repository: "ciprnd/expaifrontend"
   tag: "latest"
-  # digest: "sha256:e7446c106a3227d41f10ed2b347849f3cb1fd3d8ca7c42b1ba1744b187bf094d"
-  digest: "sha256:5515547fd6ba0cfebb4038b294440865ea79bb0a259c93c78bad1348fb2fffb4"
+  # digest: "sha256:..."
   
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
@@ -658,7 +644,7 @@ ingress:
   ## @param ingress.hostname Default host for the ingress record
   ##
   # hostname: gpuwizardvicuna13b-advait99deshmukh-491618-0.datalab.euw1.prod.sgcip.io
-  hostname: expaifrontend-satyamkumar-209565-0.datalab.euw1.prod.sgcip.io
+  hostname: expaifrontend-kushagra99agarwal-871218-0.datalab.euw1.prod.sgcip.io
   ## @param ingress.ingressClassName IngressClass that will be be used to implement the Ingress (Kubernetes 1.18+)
   ## This is supported in Kubernetes 1.18+ and required if you have more than one IngressClass marked as the default for your cluster .
   ## ref: https://kubernetes.io/blog/2020/04/02/improvements-to-the-ingress-api-in-kubernetes-1.18/
